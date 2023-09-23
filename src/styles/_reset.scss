@@ -37,6 +37,7 @@ button {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  min-height: 100svh;
   padding: 1rem 2rem 2rem;
   background-color: var(--color-theme-background);
 }
