@@ -1,0 +1,61 @@
+@import '../../styles/index.scss';
+
+.result {
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem 3rem;
+  max-height: 12rem;
+  border: 2px solid $color-neutral-900;
+  background-color: $color-neutral-100;
+  box-shadow: 4px 4px 0px $color-neutral-900;
+  text-align: right;
+
+  &__cutout {
+    position: absolute;
+    top: -0.5px;
+    left: -0.5px;
+    height: 5rem;
+    width: 5rem;
+    border-right: 2px solid $color-neutral-900;
+    background-color: var(--color-theme-background);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &__history {
+    color: $color-neutral-700;
+    font-size: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__current {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 0.5rem;
+  }
+
+  &::before {
+    bottom: 0.5rem;
+    background-color: var(--color-theme-primary-30);
+  }
+
+  &::after {
+    bottom: 0;
+    background-color: var(--color-theme-secondary-30);
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/index.scss';
+
+.theme-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-self: end;
+
+  @include breakpoint {
+    align-self: center;
+  }
+
+  & button {
+    @include button($size: 1rem, $border-radius: 2px, $shadow: 'small');
+  }
+}

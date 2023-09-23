@@ -1,0 +1,33 @@
+@mixin button(
+  $in-grid: false,
+  $grid-size: 1,
+  $size: false,
+  $border-radius: 0.5rem,
+  $shadow: 'big'
+) {
+  @if $in-grid {
+    grid-column: span $grid-size;
+  }
+
+  @if $size {
+    width: $size;
+    height: $size;
+  }
+
+  @if $shadow == 'big' {
+    box-shadow: 2px 4px 0px $color-neutral-900;
+  } @else if $shadow == 'small' {
+    box-shadow: 1px 2px 0px $color-neutral-900;
+  }
+
+  border: 2px solid $color-neutral-900;
+  border-radius: $border-radius;
+  background-color: $color-neutral-100;
+  color: $color-neutral-900;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

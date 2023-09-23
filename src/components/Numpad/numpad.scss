@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+
+  &__button {
+    @include button(true);
+    aspect-ratio: 1 / 1;
+
+    &[data-color='primary'] {
+      color: var(--color-theme-primary);
+
+      &:hover {
+        background-color: var(--color-theme-primary-30);
+      }
+    }
+
+    &[data-color='secondary'] {
+      color: var(--color-theme-secondary);
+
+      &:hover {
+        background-color: var(--color-theme-secondary-30);
+      }
+    }
+  }
+
+  &__button--big {
+    @include button(true, 2);
+  }
+}

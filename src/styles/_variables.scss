@@ -1,0 +1,43 @@
+//
+// Font
+//
+
+$font-primary: 'Bungee', 'sans-serif';
+
+//
+// Colors
+//
+
+$color-neutral-900: #0b0b0b;
+$color-neutral-700: #838383;
+$color-neutral-100: #fefefe;
+
+:root {
+  --color-theme-background: #efefef;
+  --color-theme-primary: #76babd;
+  --color-theme-primary-30: #d5eaea;
+  --color-theme-secondary: #e7af62;
+  --color-theme-secondary-30: #f7e6cf;
+}
+
+[data-theme='pink'] {
+  --color-theme-background: #fbf3f6;
+  --color-theme-primary: #e894b5;
+  --color-theme-primary-30: #f7dee8;
+  --color-theme-secondary: #e44382;
+  --color-theme-secondary-30: #f6c6d9;
+}
+
+[data-theme='orange'] {
+  --color-theme-background: #fceede;
+  --color-theme-primary: #ffa139;
+  --color-theme-primary-30: #fee2c3;
+  --color-theme-secondary: #f86e33;
+  --color-theme-secondary-30: #fcd3c1;
+}
+
+//
+// Sizes
+//
+
+$max-width: 20rem;
