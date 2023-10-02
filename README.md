@@ -1,5 +1,5 @@
 # Calculator
-This is fun little calculator is built using:
+This fun little calculator is built using:
 - React
 - TypeScript
 - Scss
